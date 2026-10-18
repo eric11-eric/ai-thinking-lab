@@ -1,0 +1,304 @@
+@page {
+  size: A4;
+  margin: 16mm;
+}
+
+* {
+  box-shadow: none !important;
+  animation: none !important;
+  transition: none !important;
+}
+
+html,
+body {
+  background: #fff !important;
+  color: #111827 !important;
+  font-size: 10.5pt;
+}
+
+.site-header,
+.site-footer,
+.skip-link,
+button,
+.visualization-section,
+.library-section,
+.toolkit-section,
+#theory,
+.report-reset,
+.experiment-progress,
+.resume-notice {
+  display: none !important;
+}
+
+.portrait-atlas-section {
+  display: none !important;
+}
+
+.portrait-result-actions,
+.portrait-eyebrow,
+.portrait-visual-wrap,
+.portrait-section .section-heading,
+.context-section,
+.knowledge-root {
+  display: none !important;
+}
+
+.site-shell {
+  width: 100%;
+  max-width: none;
+}
+
+.app-root,
+.knowledge-root,
+.knowledge-section {
+  padding: 0 !important;
+}
+
+.report-cover h1 {
+  max-width: none;
+  font-size: 28pt;
+}
+
+.report-stage,
+.theory-review,
+.source-section {
+  display: block !important;
+  margin: 0 0 10mm !important;
+  border-color: #9ca3af !important;
+}
+
+.report-section,
+.report-cover,
+.report-moment,
+.report-replay-item,
+.ai-influence,
+.practice-next,
+.theory-unit,
+.source-directory,
+.method-note {
+  break-inside: avoid;
+  margin-bottom: 7mm;
+}
+
+.report-cover,
+.replay-body,
+.ai-influence,
+.commitment-options,
+.dimension-grid,
+.report-observations,
+.theory-unit {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+.report-cover {
+  min-height: 0 !important;
+  gap: 8mm !important;
+}
+
+.report-fingerprint {
+  grid-template-columns: repeat(3, 1fr) !important;
+}
+
+.report-fingerprint div,
+.report-fingerprint div:first-child {
+  min-height: 0 !important;
+  grid-column: auto !important;
+  background: #fff !important;
+  color: #111827 !important;
+}
+
+.report-moment-grid {
+  display: block !important;
+}
+
+.report-replay-chain {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
+.report-replay-chain li {
+  min-height: 0 !important;
+}
+
+.report-moment {
+  margin-bottom: 4mm;
+}
+
+.ai-influence {
+  background: #fff !important;
+  color: #111827 !important;
+}
+
+.ai-influence p {
+  color: #374151 !important;
+}
+
+.report-notebook > summary {
+  display: none !important;
+}
+
+.source-directory > * {
+  display: block !important;
+}
+
+.source-directory summary {
+  display: none !important;
+}
+
+a {
+  color: #111827 !important;
+  text-decoration: none;
+}
+
+a[href^="http"]::after {
+  content: " (" attr(href) ")";
+  font-size: 8pt;
+  overflow-wrap: anywhere;
+}
+
+.portrait-reveal,
+.portrait-result-heading,
+.portrait-section,
+.marx-wakeup,
+.portrait-deep-analysis,
+.portrait-deep-analysis-body,
+.guidance-impact,
+.portrait-explainability {
+  display: block !important;
+  margin: 0 0 8mm !important;
+  padding: 0 !important;
+}
+
+.portrait-analysis-evidence {
+  display: none !important;
+}
+
+.portrait-deep-analysis > summary {
+  display: none !important;
+}
+
+.portrait-deep-analysis-body {
+  color: #111827 !important;
+}
+
+.portrait-analysis-lens,
+.portrait-analysis-principles,
+.portrait-analysis-practice,
+.portrait-analysis-answer {
+  display: block !important;
+  margin-bottom: 4mm !important;
+  padding: 4mm !important;
+  border: 1px solid #9ca3af !important;
+  background: #fff !important;
+  break-inside: avoid;
+}
+
+.portrait-result-heading h1 {
+  margin: 0 0 4mm !important;
+  font-size: 34pt !important;
+  line-height: 1 !important;
+}
+
+.portrait-hero-grid {
+  display: block !important;
+  border: 1px solid #111827 !important;
+}
+
+.portrait-card {
+  display: block !important;
+  padding: 8mm !important;
+  break-inside: avoid;
+}
+
+.portrait-card h2 {
+  margin: 3mm 0 !important;
+  font-size: 25pt !important;
+}
+
+.portrait-card-visual {
+  display: block !important;
+  width: 38mm !important;
+  margin: 0 0 4mm auto !important;
+}
+
+.portrait-card-context,
+.portrait-card-spectra {
+  display: flex !important;
+  gap: 3mm !important;
+  flex-wrap: wrap;
+  margin-block: 4mm !important;
+}
+
+.portrait-card-spectra .portrait-spectrum {
+  width: calc(50% - 2mm);
+}
+
+.portrait-card dl,
+.spectrum-list,
+.moment-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4mm !important;
+}
+
+.portrait-section[aria-labelledby="spectrum-title"],
+.portrait-section[aria-labelledby="moment-title"] {
+  display: block !important;
+  break-before: page;
+}
+
+.portrait-spectrum,
+.portrait-moment {
+  min-height: 0 !important;
+  grid-column: auto !important;
+  padding: 4mm !important;
+  border: 1px solid #9ca3af !important;
+  background: #fff !important;
+  color: #111827 !important;
+  break-inside: avoid;
+}
+
+.portrait-spectrum:last-child {
+  grid-column: 1 / -1 !important;
+}
+
+.guidance-impact {
+  break-before: page;
+  background: #fff !important;
+  color: #111827 !important;
+}
+
+.guidance-impact > h2 {
+  margin: 2mm 0 8mm !important;
+  font-size: 28pt !important;
+}
+
+.guidance-theory,
+.guidance-theory-body,
+.portrait-explainability {
+  display: block !important;
+  color: #111827 !important;
+}
+
+.portrait-theory-connections {
+  display: block !important;
+  break-before: page;
+}
+
+.theory-connection-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4mm !important;
+}
+
+.guidance-theory summary,
+.portrait-explainability summary {
+  font-size: 13pt;
+}
+
+.guidance-theory-body {
+  grid-template-columns: 1fr 1fr !important;
+}
+
+.evidence-id-list code {
+  border: 1px solid #9ca3af !important;
+}

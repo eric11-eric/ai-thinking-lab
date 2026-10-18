@@ -1,0 +1,24 @@
+:root {
+  color-scheme: light;
+  --paper: #f2f4f1;
+  --paper-raised: #f8faf7;
+  --ink: #121a2b;
+  --ink-muted: #586173;
+  --line: #cbd1d9;
+  --accent: #2452d6;
+  --accent-strong: #183b9f;
+  --accent-soft: #dfe7ff;
+  --warning: #8c4a13;
+  --success: #17624a;
+  --radius-small: 0.45rem;
+  --radius-medium: 0.9rem;
+  --shadow-soft: 0 1.2rem 3rem rgba(32, 47, 75, 0.09);
+  --duration-fast: 180ms;
+  --duration-medium: 420ms;
+  --layer-header: 20;
+  --layer-skip: 100;
+  --content-width: 80rem;
+  --reading-width: 68ch;
+  --font-sans: "PingFang SC", "Microsoft YaHei", "Noto Sans CJK SC", system-ui, sans-serif;
+  --font-mono: "SFMono-Regular", "Cascadia Code", "Roboto Mono", monospace;
+}
