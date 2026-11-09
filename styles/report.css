@@ -1,0 +1,32 @@
+.report-cover{background:#e8efe8;padding:52px 0 58px}
+.report-cover-inner{width:min(calc(100% - 72px),1200px);margin:auto}
+.report-cover h1{font-size:clamp(44px,4.5vw,66px);max-width:870px;margin:0 0 24px;line-height:1.19}
+.report-cover .report-summary{font-size:21px;line-height:1.7;max-width:860px;margin:0 0 25px}
+.report-cover .report-thesis{font-size:20px;font-weight:700;color:#0c4e47;max-width:860px;margin:0}
+.chapter-report{width:min(calc(100% - 72px),1200px);margin:70px auto 115px;display:grid;grid-template-columns:240px minmax(0,760px);gap:76px;align-items:start}
+.report-toc{position:sticky;top:112px;align-self:start;display:flex;flex-direction:column;gap:5px}
+.report-toc-title{font-size:22px;font-weight:750;margin:0 0 15px}
+.report-toc a{display:block;padding:12px 15px;border-left:3px solid transparent;text-decoration:none;color:#526263;font-size:17px;line-height:1.5;transition:color .18s,background .18s,border-color .18s}
+.report-toc a:hover,.report-toc a[aria-current]{color:#0c4e47;background:#e8eee9;border-left-color:#17675e}
+.report-toc .report-all-link{margin-top:14px;font-weight:700}
+.report-reading{min-width:0;scroll-margin-top:110px}
+.report-progress{font-size:16px;font-weight:700;color:#17675e;margin:0 0 28px}
+.report-chapter{scroll-margin-top:110px;padding-bottom:35px}
+.report-chapter:not(:first-of-type){border-top:1px solid #ced8d2;padding-top:55px}
+.report-enhanced .report-chapter{border:0;padding-top:0}
+.report-chapter h2{font-size:clamp(32px,3.2vw,43px);line-height:1.27;margin:0 0 28px;letter-spacing:-.045em}
+.report-chapter p{font-size:19px;line-height:1.9;margin:0 0 23px}
+.report-chapter strong{font-weight:750}
+.report-chapter a:not(.chapter-nav a){color:#17675e;text-underline-offset:4px}
+.report-chapter .report-evidence{background:#e8eee9;padding:23px 27px;margin:31px 0;font-size:18px;line-height:1.75}
+.report-chapter .report-quote{border-left:4px solid #17675e;padding-left:23px;font-size:22px;line-height:1.65;font-weight:650;margin:35px 0}
+.report-chapter .report-limit{color:#526263;font-size:17px}
+.chapter-nav{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #ced8d2;margin-top:48px;padding-top:25px}
+.chapter-nav a{font-size:18px;font-weight:700;color:#17675e;text-decoration:none}
+.chapter-nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.report-enhanced .report-chapter:not([hidden]){animation:report-appear .28s ease both}
+@keyframes report-appear{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+@media(max-width:800px){.chapter-report{display:block;width:calc(100% - 38px);margin:37px auto 80px}.report-cover-inner{width:calc(100% - 38px)}.report-toc{position:static;display:flex;flex-direction:row;gap:6px;overflow-x:auto;white-space:nowrap;padding:0 0 13px;border-bottom:1px solid #ced8d2;margin-bottom:35px;scrollbar-width:thin}.report-toc-title{display:none}.report-toc a{border-left:0;border-bottom:3px solid transparent;padding:11px 12px;font-size:16px}.report-toc a:hover,.report-toc a[aria-current]{border-left:0;border-bottom-color:#17675e}.report-toc .report-all-link{margin-top:0}.report-cover{padding:43px 0}.report-cover .report-summary{font-size:19px}.report-cover .report-thesis{font-size:18px}.report-reading,.report-chapter{scroll-margin-top:125px}}
+@media(max-width:520px){.report-cover h1{font-size:43px}.report-chapter h2{font-size:32px}.report-chapter p{font-size:18px}.report-chapter .report-evidence{padding:20px}.chapter-nav a{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.report-toc a{transition:none}.report-enhanced .report-chapter:not([hidden]){animation:none}}
+@media print{.report-cover{background:white;padding:0}.chapter-report{display:block;width:100%;margin:25px 0}.report-toc,.report-progress,.chapter-nav{display:none!important}.report-chapter,.report-chapter[hidden]{display:block!important;border-top:1px solid #aaa!important;padding:20px 0!important;animation:none!important;break-inside:avoid-page}.report-cover h1{font-size:31px}.report-chapter h2{font-size:25px}.report-chapter p{font-size:13px;line-height:1.5}}

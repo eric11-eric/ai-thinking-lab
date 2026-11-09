@@ -1,0 +1,62 @@
+.portrait-hero{background:var(--ink);color:#fffefb;padding:70px 0 62px}
+.portrait-hero .wrap{max-width:1140px}
+.portrait-label{font-size:19px;font-weight:700;color:#bde0bc;margin:0 0 26px}
+.portrait-hero h1{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;font-size:clamp(38px,4.4vw,65px);line-height:1.12;letter-spacing:-.065em;margin:0 0 34px}
+.portrait-hero h1 span{display:block;white-space:nowrap}
+.portrait-hero h1 span:nth-child(2){color:#bde0bc}
+.portrait-summary{max-width:960px;font-size:21px;line-height:1.7;color:#e5eee7;margin:0 0 26px}
+.portrait-premise{max-width:980px;font-size:23px;line-height:1.65;color:#c7e6bf;margin:0}
+.portrait-premise strong{color:#fffefb}
+.portrait-main{padding:51px 0 110px}
+.lab-scene-tabs{max-width:860px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-bottom:1px solid var(--line);margin:0 auto 56px}
+.lab-scene-tabs button{font:inherit;font-size:21px;font-weight:700;color:var(--muted);background:none;border:0;border-bottom:4px solid transparent;padding:17px 14px;cursor:pointer;text-align:center}
+.lab-scene-tabs button:hover,.lab-scene-tabs button[aria-pressed="true"]{color:var(--teal);border-bottom-color:var(--teal)}
+.portrait-article{max-width:860px;margin:0 auto;animation:appear .28s ease both}
+.portrait-article h2{font-size:clamp(36px,3.4vw,49px);line-height:1.27;margin:0 0 28px}
+.portrait-lede{font-size:25px;line-height:1.65;font-weight:650;margin:0 0 23px}
+.portrait-body,.portrait-extra,.portrait-pivot{font-size:19px;line-height:1.85;margin:0 0 22px}
+.portrait-pivot{color:var(--teal-dark)}
+.portrait-theory{background:var(--wash);padding:40px 44px;margin:49px 0 35px}
+.portrait-theory h3{font-size:29px;line-height:1.4;margin:0 0 20px}
+.portrait-theory p{font-size:19px;line-height:1.85;margin:0 0 19px}
+.portrait-theory details{margin:24px 0}
+.portrait-theory summary{font-size:18px;font-weight:700;color:var(--teal);cursor:pointer}
+.portrait-theory details p{margin:17px 0 0}
+.portrait-sources{display:flex;flex-wrap:wrap;gap:10px 25px;margin-top:25px}
+.portrait-sources a{font-size:17px;color:var(--teal);font-weight:700;text-decoration:none}
+.portrait-sources a:hover{text-decoration:underline;text-underline-offset:4px}
+.portrait-evidence{background:var(--white);border:1px solid var(--line);padding:25px 31px;margin:0 0 42px}
+.portrait-evidence summary{font-size:21px;font-weight:700;color:var(--ink);cursor:pointer}
+.portrait-evidence>p{font-size:17px;color:var(--muted);margin:23px 0}
+.portrait-evidence ol{margin:0;padding-left:1.45em}
+.portrait-evidence li{font-size:18px;line-height:1.7;margin:0 0 24px;padding-left:5px}
+.portrait-evidence li:last-child{margin-bottom:0}
+.portrait-evidence li strong{font-weight:700}
+.portrait-evidence li p{margin:8px 0}
+.portrait-evidence li p:last-child{color:var(--muted)}
+.portrait-theory summary:focus-visible,.portrait-evidence summary:focus-visible{outline:3px solid #d47d49;outline-offset:4px}
+.lab-actions{display:flex;align-items:center;flex-wrap:wrap;gap:22px 32px;margin:42px 0}
+@media(max-width:760px){
+  .portrait-hero{padding:54px 0 52px}
+  .portrait-hero h1{grid-template-columns:1fr;gap:4px;font-size:clamp(43px,8.6vw,62px);margin-bottom:27px}
+  .portrait-summary{font-size:19px}
+  .portrait-premise{font-size:21px}
+  .portrait-main{padding-top:31px}
+  .lab-scene-tabs{margin-bottom:42px}
+  .lab-scene-tabs button{font-size:18px;padding:14px 8px}
+  .portrait-article h2{font-size:36px}
+  .portrait-lede{font-size:22px}
+  .portrait-body,.portrait-extra,.portrait-pivot{font-size:18px}
+  .portrait-theory{padding:29px 27px}
+  .portrait-theory h3{font-size:26px}
+  .portrait-theory p{font-size:18px}
+}
+@media(max-width:520px){
+  .portrait-hero h1{font-size:43px}
+  .portrait-article h2{font-size:31px}
+  .portrait-evidence{padding:22px 22px}
+  .lab-actions{display:block}
+  .lab-actions .plain-button{display:block;margin-top:21px}
+}
+@media(prefers-reduced-motion:reduce){.portrait-article{animation:none}}
+@media print{.lab-scene-tabs,.lab-actions{display:none!important}.portrait-hero{background:white;color:black;padding:20px 0}.portrait-hero h1 span:nth-child(2),.portrait-label,.portrait-summary,.portrait-premise,.portrait-premise strong{color:black}.portrait-theory{background:white;border:1px solid #aaa}.portrait-evidence{border:1px solid #aaa}}
